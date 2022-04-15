@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React PWA</title>
+    <style type="text/css">
+        html {
+            height: 100%;
+        }
+
+        body {
+            height: 100%;
+            margin: 0;
+            background: #0a1f44;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+        }
+
+        .city {
+            align-items: center;
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding: 40px 8%;
+            border-radius: 20px;
+            background: #fff;
+        }
+
+        .city-name {
+            font-size: 2em;
+        }
+    </style>
+    <script>
+        function add_data() {
+            for (var i = 0; i < localStorage.length; i++) {
+                document.getElementById("test_run").innerHTML += "<p> <span>" + localStorage.key(i) + " -> " + localStorage[localStorage.key(i)] + "</span></p>";
+                console.log(localStorage.key(i), ' = ', localStorage[localStorage.key(i)]);
+            }
+        }
+
+        function clean_data() {
+            localStorage.clear();
+            document.getElementById("test_run").innerHTML = "<span>Please go online to check latest Brands related data.</span>"
+        }
+    </script>
+</head>
+
+<body onload="add_data()">
+    <div class="city">
+        <h2 class="city-name" id="test_run">
+            <span>Please go online to check latest Brands related data.</span>
+        </h2>
+        <button className="city-icon" onClick="clean_data()">Clean data</Button>
+    </div>
+
+</body>
+
+</html>

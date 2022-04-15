@@ -1,0 +1,16 @@
+{
+    "short_name": "PWAbrand",
+    "name": "Test PWA for apk",
+    "icons": [
+        {
+            "src": "/images/logo.png",
+            "type": "image/png",
+            "sizes": "1024x1024",
+            "purpose": "any maskable"
+        }
+    ],
+    "start_url": ".",
+    "display": "fullscreen",
+    "theme_color": "#000000",
+    "background_color": "#ffffff"
+}
