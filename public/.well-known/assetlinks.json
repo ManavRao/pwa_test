@@ -1,0 +1,6 @@
+[{
+        "relation": ["delegate_permission/common.handle_all_urls"],
+        "target" : { "namespace": "android_app", "package_name": "app.netlify.luxury_valkyrie_06829e.twa",
+                     "sha256_cert_fingerprints": ["D7:BC:50:6C:F7:73:BA:83:8B:24:FF:4B:CA:5B:3E:DD:E0:64:13:BA:88:72:15:78:CD:5F:6A:06:4F:2D:DF:44"] }
+      }
+]
