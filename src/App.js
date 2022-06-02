@@ -39,7 +39,7 @@ const App = () => {
     }
 
     const open_new_window = async () =>{
-        window.open("https://www.google.com", "_blank", "popup")
+        window.open("https://www.google.com", "_system", "popup")
     }
     const add_sign = () => {
         var random_number1 = Math.round(Math.random() * 100);
