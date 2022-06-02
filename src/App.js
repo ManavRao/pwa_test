@@ -38,6 +38,9 @@ const App = () => {
         setWeather('');
     }
 
+    const open_new_window = async () =>{
+        window.open("https://www.google.com", "_blank", "popup")
+    }
     const add_sign = () => {
         var random_number1 = Math.round(Math.random() * 100);
         var random_number = (random_number1 % 2);
@@ -80,6 +83,7 @@ const App = () => {
             )}
 
             <Button className="city-icon" style={{ borderRadius: '10px', height: 'fit-content' }} onClick={toggle_login_off}>Logout</Button>
+            <Button className="city-icon" style={{ borderRadius: '10px', height: 'fit-content' }} onClick={open_new_window}>Test Button</Button>
         </div>
     );
 }
