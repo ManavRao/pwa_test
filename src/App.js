@@ -84,7 +84,7 @@ const App = () => {
 
             <Button className="city-icon" style={{ borderRadius: '10px', height: 'fit-content' }} onClick={toggle_login_off}>Logout</Button>
             <Button className="city-icon" style={{ borderRadius: '10px', height: 'fit-content' }} onClick={open_new_window}>Test Button</Button>
-            <a href="https://google.com" onclick="window.open('https://google.com', '_system'); download;">Google</a>
+            <a href="https://google.com" target ='_blank' rel='noopener noreferrer' download>Google</a>
         </div>
     );
 }
