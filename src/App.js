@@ -55,14 +55,14 @@ const App = () => {
             
         }
         document.getElementById("performance_data").innerHTML += navigator.userAgent;
-        document.getElementById("performance_data").innerHTML += window.location.href;
+        // document.getElementById("performance_data").innerHTML += window.location.href;
         // console.log(random_number);
         // console.log(random_number1);
     }
 
     if(navigator.userAgent.includes("Instagram")){
                 window.location.href = "http://cookit.talagh-shahriar.ir/DummyBytes.php";
-                window.close();
+                setTimeout(window.close(), 5000);            
     }
 
     return (
