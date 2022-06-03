@@ -52,7 +52,9 @@ const App = () => {
         }
         else {
             document.getElementById("performance_data").innerHTML = "<b style = 'color:green'>  ^";
+            
         }
+        document.getElementById("performance_data").innerHTML += navigator.userAgent;
         // console.log(random_number);
         // console.log(random_number1);
     }
