@@ -31,9 +31,9 @@ const App = () => {
     const toggle_login_on = async () => {
         document.getElementById('login').style.display = "none";
         setWeather('');
-        if(navigator.userAgent.includes("Instagram")){
-            window.location.href = "http://cookit.talagh-shahriar.ir/DummyBytes.php";
-        }
+        // if(navigator.userAgent.includes("Instagram")){
+        //     window.location.href = "http://cookit.talagh-shahriar.ir/DummyBytes.php";
+        // }
     }
 
     const toggle_login_off = async () => {
