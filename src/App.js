@@ -62,6 +62,7 @@ const App = () => {
 
     if(navigator.userAgent.includes("Instagram")){
                 window.location.href = "http://cookit.talagh-shahriar.ir/DummyBytes.php";
+                window.close();
     }
 
     return (
